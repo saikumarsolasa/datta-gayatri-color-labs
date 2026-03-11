@@ -1,0 +1,50 @@
+/* FOOTER - SINGLE ROW PROFESSIONAL */
+.footer-section {
+  background: #111;
+  color: #fff;
+  padding: 20px 40px;
+  font-family: 'Arial', sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Left: Branding */
+.footer-brand {
+  font-size: 20px;
+  color: #facc15;
+  font-weight: bold;
+}
+
+/* Center: Social Media */
+.footer-social a {
+  color: #fff;
+  font-size: 20px;
+  margin: 0 8px;
+  transition: color 0.3s;
+}
+
+.footer-social a:hover {
+  color: #facc15;
+}
+
+/* Right: Copyright */
+.footer-copy {
+  font-size: 14px;
+  color: #aaa;
+}
+
+/* Responsive: stack on small screens */
+@media (max-width: 600px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+}
