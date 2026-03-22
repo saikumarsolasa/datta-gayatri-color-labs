@@ -1,18 +1,20 @@
 import React, { useState } from "react";
 import "../styles/Navbar.css";
-import Logo from "../assests/logo.svg";
+import Logo from "../assests/logo.jpeg";
+import { useNavigate } from "react-router-dom";
 
 function Navbar() {
+  const navigate = useNavigate();
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <nav className="navbar">
       <div className="nav-container">
         <div className="logo-section">
-          <div className="logo-img">
+          <div className="logo-img" onClick={()=>navigate("/")}>
             <img src={Logo} alt="DG Logo" />
           </div>
-          <div className="logo-text">Datta Gayatri Color Labs</div>
+          <div className="logo-text">Dattha Gayatri Digital Colour Labs</div>
         </div>
 
         <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
