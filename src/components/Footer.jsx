@@ -86,7 +86,7 @@ function Footer() {
             <FaClock className="contact-icon" />
             <div>
               <p className="contact-label">Hours</p>
-              <p className="contact-value">Mon - Sun: 10AM - 8PM</p>
+              <p className="contact-value">Mon - Sun: 10AM - 9PM</p>
             </div>
           </div>
         </div>

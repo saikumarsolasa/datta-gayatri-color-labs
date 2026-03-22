@@ -19,8 +19,8 @@ margin:auto;
 }
 
 .service-card{
-background:white;
-padding:15px;
+background: #e4e4e4;
+padding:16px;
 border-radius:10px;
 border:1px solid #ddd;
 transition:0.3s;
@@ -77,15 +77,15 @@ transform:scale(1.05);
 
 .learn-more-btn:hover {
   background: white;
-  border-color: #667eea;
-  color: #667eea;
-  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15);
+  border-color: #facc15;
+  color: #facc15;
+  box-shadow: 0 4px 12px rgba(250, 204, 21, 0.15);
   transform: translateY(-2px);
 }
 
 .learn-more-btn:active {
   transform: translateY(0);
-  box-shadow: 0 2px 6px rgba(102, 126, 234, 0.1);
+  box-shadow: 0 2px 6px rgba(250, 204, 21, 0.1);
 }
 
 .btn-icon {

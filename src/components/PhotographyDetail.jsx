@@ -2,6 +2,15 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { FaBaby, FaUtensils, FaBirthdayCake, FaGem, FaHeart, FaRing, FaFilm, FaHome, FaCamera } from "react-icons/fa";
 import "../styles/PhotographyDetail.css";
+import AnnaprasanaImg from "../assests/Annaprasana.png";
+import DhothiImg from "../assests/dhothi.png";
+import WeddingImg from "../assests/wedding.png";
+import NamingCeremony from "../assests/cradle ceremony.png";
+import BirthdayImg from "../assests/birthday.png";
+import PreshootImg from "../assests/preshoot.png";
+import GruhapravesamImg from "../assests/gruha.png";
+import Candid from "../assests/candid.jpg.jpeg";
+import Other from "../assests/other.png";
 
 function PhotographyDetail() {
   const navigate = useNavigate();
@@ -19,7 +28,7 @@ function PhotographyDetail() {
       title: "Naming Ceremony",
       desc: "Capture the precious moment when your newborn receives their name with professional photography.",
       details: "Professional documentation of this auspicious milestone with candid moments of family celebrations and joy.",
-      icon: <FaBaby />,
+      icon: NamingCeremony,
       color: "#FF6B6B"
     },
     {
@@ -27,7 +36,7 @@ function PhotographyDetail() {
       title: "Annaprasana",
       desc: "Preserve the beautiful tradition of your baby's first rice ceremony with stunning photography.",
       details: "Capture every detail of this sacred moment - from rituals to family reactions - with professional quality and care.",
-      icon: <FaUtensils />,
+      icon: AnnaprasanaImg,
       color: "#4ECDC4"
     },
     {
@@ -35,7 +44,7 @@ function PhotographyDetail() {
       title: "Birthday",
       desc: "Make your birthday celebration unforgettable with professional photography and videography.",
       details: "From candid party moments to posed portraits, we capture the joy and laughter of your special day.",
-      icon: <FaBirthdayCake />,
+      icon: BirthdayImg,
       color: "#FFD93D"
     },
     {
@@ -43,7 +52,7 @@ function PhotographyDetail() {
       title: "Dhothi And Half Saree",
       desc: "Professional photography for this traditional coming-of-age ceremony with cultural elegance.",
       details: "Beautiful coverage of rituals, traditional performances, and family moments with traditional attire.",
-      icon: <FaGem />,
+      icon: DhothiImg,
       color: "#A8E6CF"
     },
     {
@@ -51,7 +60,7 @@ function PhotographyDetail() {
       title: "Pre-shoot and Post-shoot",
       desc: "Creative pre-wedding and post-wedding photography that tells your unique love story.",
       details: "Candid and posed sessions in scenic locations capturing the magic before and after your big day.",
-      icon: <FaHeart />,
+      icon: PreshootImg,
       color: "#95E1D3"
     },
     {
@@ -59,7 +68,7 @@ function PhotographyDetail() {
       title: "Wedding",
       desc: "Capture every precious moment of your wedding day with professional cinematic videography.",
       details: "From bridal preparations to the grand finale - comprehensive coverage ensuring no moment is missed.",
-      icon: <FaRing />,
+      icon: WeddingImg,
       color: "#F38181"
     },
     {
@@ -67,7 +76,7 @@ function PhotographyDetail() {
       title: "Candid & Cinematography",
       desc: "Authentic candid photography combined with cinematic videography for your special events.",
       details: "Storytelling through natural moments and professional video production for timeless memories.",
-      icon: <FaFilm />,
+      icon: Candid,
       color: "#FF6B6B"
     },
     {
@@ -75,7 +84,7 @@ function PhotographyDetail() {
       title: "Gruhapravesam",
       desc: "Capture the auspicious occasion of your new home with professional photography and videography.",
       details: "Complete documentation of this sacred housewarming ceremony with family moments and traditional rituals.",
-      icon: <FaHome />,
+      icon: GruhapravesamImg,
       color: "#FFB6C1"
     },
     {
@@ -83,12 +92,10 @@ function PhotographyDetail() {
       title: "Other Events",
       desc: "Professional photography and videography for all other special occasions and events not listed above.",
       details: "Comprehensive coverage of corporate events, anniversaries, engagements, and any memorable occasions you want captured.",
-      icon: <FaCamera />,
+      icon: Other,
       color: "#87CEEB"
     }
   ];
-
-
 
   return (
     <div className="photography-detail">
@@ -137,8 +144,8 @@ function PhotographyDetail() {
               className="photo-service-card" 
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="service-icon" style={{ color: service.color }}>
-                {service.icon}
+              <div className="service-icon">
+                <img src={service?.icon} alt={service?.title} className="service-icon-img" />
               </div>
               <div className="photo-service-content">
                 <h3>{service.title}</h3>
