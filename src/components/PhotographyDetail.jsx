@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { FaBaby, FaUtensils, FaBirthdayCake, FaGem, FaHeart, FaRing, FaFilm, FaHome, FaCamera } from "react-icons/fa";
 import "../styles/PhotographyDetail.css";
 import AnnaprasanaImg from "../assests/Annaprasana.png";
 import DhothiImg from "../assests/dhothi.png";
