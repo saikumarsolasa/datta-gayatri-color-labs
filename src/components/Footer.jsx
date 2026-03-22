@@ -67,8 +67,8 @@ function Footer() {
             <FaPhone className="contact-icon" />
             <div>
               <p className="contact-label">Phone</p>
-              <a href="tel:+919000899636" className="contact-value">+91-9000 899 636</a>
-              <a href="tel:+919848150567" className="contact-value">+91-9848 150 567</a>
+              <a href="tel:+919000899936" className="contact-value">+91-9000899936</a>
+              <a href="tel:+919848150567" className="contact-value">+91-9848150567</a>
             </div>
           </div>
 
