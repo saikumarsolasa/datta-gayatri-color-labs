@@ -17,18 +17,18 @@ export const services = [
   },
   {
     title: "Flex Printing",
-    desc: "Personalized mugs, frames, calendars and gifts.",
+    desc: "High-quality flex banners and large format printing for events.",
     img: "https://images.pexels.com/photos/1205039/pexels-photo-1205039.jpeg?auto=compress&cs=tinysrgb&w=500" // gifts
   },
   {
     title: "Multicolor Works",
-    desc: "Celebrate birthdays with memorable photos.",
+    desc: "Vibrant multicolor printing services for all your creative needs.",
     img: "https://images.pexels.com/photos/207983/pexels-photo-207983.jpeg?auto=compress&cs=tinysrgb&w=500" // birthday
   },
  
   {
     title: "Silver Subhalekha Printing",
-    desc: "High quality cinematic videos for weddings and events.",
+    desc: "Elegant silver and traditional subhalekha printing for special occasions.",
     img: "https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?crop=entropy&cs=tinysrgb&fit=max&w=400" // video
   },
   {
@@ -43,7 +43,7 @@ export const services = [
   },
   {
     title: "AI-Enhanced Video Creations",
-    desc: "Creative editing and album layouts for your photos.",
+    desc: "Cutting-edge AI technology for stunning video creation and enhancement.",
     img: "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?crop=entropy&cs=tinysrgb&fit=max&w=400" // designing
   }
 ];
