@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import { FaChevronRight } from "react-icons/fa";
 import { services } from "../data/services";
 import "../styles/Services.css";
 
@@ -28,7 +29,16 @@ function Services() {
             <h3>{service.title}</h3>
             <p>{service.desc}</p>
             {service.title === "Photo & Videography" && (
-              <span className="view-more">View All Photography Services →</span>
+              <button 
+                className="learn-more-btn"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  navigate(service.link || "#");
+                }}
+              >
+                <span>Learn More</span>
+                <FaChevronRight className="btn-icon" />
+              </button>
             )}
 
           </div>

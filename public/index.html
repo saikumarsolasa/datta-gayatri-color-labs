@@ -4,40 +4,58 @@
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
+    <meta name="theme-color" content="#667eea" />
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Datta Gayatri Digital Color Labs - Professional photography and videography services in Tanuku. Specializing in weddings, ceremonies, events, and special occasions with cinematic quality." />
+    <meta name="keywords" content="photography, videography, wedding photography, event photography, Tanuku, professional photographer, video production, ceremonies" />
+    <meta name="author" content="Datta Gayatri Digital Color Labs" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Datta Gayatri Digital Color Labs - Professional Photography & Videography" />
+    <meta property="og:description" content="Professional photography and videography services in Tanuku. Capturing your precious moments with cinematic quality for weddings, ceremonies, and special events." />
+    <meta property="og:url" content="https://dattagyatri.com" />
+    <meta property="og:site_name" content="Datta Gayatri Digital Color Labs" />
+    
+    <!-- Twitter Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Datta Gayatri Digital Color Labs - Professional Photography & Videography" />
+    <meta name="twitter:description" content="Professional photography and videography services in Tanuku specializing in weddings, ceremonies, and special events." />
+    
+    <!-- Canonical Tag -->
+    <link rel="canonical" href="https://dattagyatri.com" />
+    
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>Datta Gayatri Digital Color Labs, Tanuku</title>
+    
+    <!-- Structured Data (Schema.org) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Datta Gayatri Digital Color Labs",
+      "image": "%PUBLIC_URL%/logo512.png",
+      "description": "Professional photography and videography services in Tanuku",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Tanuku",
+        "addressLocality": "Tanuku",
+        "addressRegion": "Andhra Pradesh",
+        "addressCountry": "IN"
+      },
+      "url": "https://dattagyatri.com",
+      "priceRange": "$$$",
+      "areaServed": "Tanuku, Andhra Pradesh",
+      "serviceType": ["Photography", "Videography", "Event Photography", "Wedding Photography"]
+    }
+    </script>
+    
+    <title>Datta Gayatri Digital Color Labs - Professional Photography & Videography in Tanuku</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <noscript>You need to enable JavaScript to run this app. Please enable JavaScript to view our photography and videography portfolio.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
 </html>

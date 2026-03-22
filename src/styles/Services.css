@@ -55,3 +55,44 @@ transition:0.3s;
 .service-img img:hover{
 transform:scale(1.05);
 }
+
+/* LEARN MORE BUTTON */
+
+.learn-more-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: #f8f9fa;
+  color: #555;
+  border: 2px solid #e0e0e0;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 14px;
+  transition: all 0.3s ease;
+}
+
+.learn-more-btn:hover {
+  background: white;
+  border-color: #667eea;
+  color: #667eea;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15);
+  transform: translateY(-2px);
+}
+
+.learn-more-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(102, 126, 234, 0.1);
+}
+
+.btn-icon {
+  font-size: 14px;
+  transition: transform 0.3s ease;
+}
+
+.learn-more-btn:hover .btn-icon {
+  transform: translateX(4px);
+}
